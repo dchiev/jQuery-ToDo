@@ -15,3 +15,7 @@ $("ul").on("click", "span", function () {
     });
   event.stopPropagation();
 });
+
+$("ul").on("click", "li", function () {
+  $(this).toggleClass("done");
+});
